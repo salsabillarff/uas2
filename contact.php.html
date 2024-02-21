@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Website Belanja ShV</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="bootstrap/css/dataTables.bootstrap.min.css" rel="stylesheet">
+		<link href="bootstrap/css/styles.css" rel="stylesheet">
+		<style>
+      body {
+        padding-top: 60px; 
+      }
+		</style>
+  </head>
+  <body>
+  <style>
+     {margin:0; padding:0;}
+     
+    body {
+     background-color:#ffB6C1;
+     font-family:butler, sans-serif;
+     color:#000;
+    }
+
+    nav {
+     margin:auto;
+     text-align: center;
+     width: 100%;
+    } 
+
+     ul ul {
+     display: none;
+    }
+
+    nav ul li:hover > ul{
+    display: block;
+    width: 150px;
+    }
+
+    nav ul {
+     background: #FFF0F5;
+     padding: 0 20px;
+     list-style: none;
+     position: relative;
+     display: inline-table;
+     width: 100%;
+    }
+
+    nav ul:after {
+     content: ""; 
+     clear:both; 
+     display: block;
+    }
+
+    nav ul li{
+     float:left;
+    }
+
+    nav ul li:hover{
+     background:#000;
+    }
+
+    nav ul li:hover a{
+     color:#000;
+    }
+
+    nav ul li a{
+     display: block;
+     padding: 25px;
+     color: #000;
+     text-decoration: none;
+    }
+
+    nav ul ul{
+     background: #FFF05F;
+     border-radius: 0px;
+     padding: 0;
+     position: absolute;
+     top:100%;
+    }
+
+    nav ul ul li{
+     float:none;
+     border-top: 1px soild #53bd84;
+     border-bottom: 1px solid #53bd84;
+     position: relative;
+    }
+
+    nav ul ul li a{
+     padding: 15px 40px;
+     color: #FF69B4;
+    }
+
+    nav ul ul li a:hover{
+     background-color: #ADFF2F;
+    }
+
+    nav ul ul ul{
+     position: absolute;
+     left: 100%;
+     top: 0;
+    }
+    </style>
+	<br>
+	<!-- Awal script Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" id="scrollspy">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle Nav</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.php">WEBSITE BELANJA PALING MURAH</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+							<a href="index.php"><span class="glyphicon glyphicon-home"></span> Home <span class="sr-only">(current)</span></a>
+						</li>
+            <li>
+							<a href="about.html"><span class="glyphicon glyphicon-user"></span> About</a>
+						</li>
+            <li class="active">
+							<a href="contact.html"><span class="glyphicon glyphicon-info-sign"></span> Contact Us</a>
+						</li>
+						<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-tasks"></span>BARANG YG DIJUAL <span class="caret"></span>
+						</a>
+							<ul class="dropdown-menu">
+								<li> <a href="taswanita.html"> <span class="glyphicon glyphicon-bag"> </span> TAS WANITA</a></li> 
+								<li> <a href="aksesoris.html"> <span class="glyphicon glyphicon-bag"> </span> AKSESORIS</a></li> 
+								<li> <a href="tassekolah.html"> <span class="glyphicon glyphicon-bag"> </span> TAS SEKOLAH</a></li> 
+							</ul>
+						</li>
+						<li>
+							<a href="koleksi.html"><span class="glyphicon glyphicon-picture"></span>koleksi </a>
+						</li>
+            <li class="item">
+              <a href="keranjang.php"><span class="glyphicon glyphicon-shopping-cart"></span> keranjang </a>
+            </li>
+            <li>
+							<a href="login.html"><span class="glyphicon glyphicon-lock"></span> Login</a>
+						</li>
+          </ul>
+        </div>
+      </div>
+    </nav><!-- Akhir script Navbar -->
+		
+		<!-- Awal Page -->
+		<div class="container">
+		<!-- Awal baris -->
+		<div class="row">
+			<div class="col-md-8"><!-- Awal Kolom Pertama -->
+			<div class="panel panel-default">
+				<div class="panel-body">
+				<h2 style="text-muted"><span class="glyphicon glyphicon-list"></span> Contact</h2>
+				<h3> <u> <center> silahkan masukkan kritik dan saran agar toko kita semakin "jaya jaya jaya"</center> </u></h3>
+					<form action="#" method="post">
+						<table class="table table-hover">
+							<tr>
+								<td>Nama Lengkap
+								<input type="text" name="nama" class="form-control input-md" placeholder="Isikan nama anda dengan lengkap" required>
+								</td>
+							</tr>
+							<tr>
+								<td>Alamat Email
+								<input type="email" name="email" class="form-control input-md" placeholder="Isikan alamat email yang masih aktif" required>
+								</td>
+							</tr>
+							<tr>
+								<td>Pesan
+								<textarea name="nama" class="form-control input-md" required> </textarea>
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<input type="submit" value="Kirim" class="btn btn-lg btn-info"> <input type="reset" value="Batal" class="btn btn-lg btn-warning">
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+      </div>
+			</div><!-- Akhir Kolom Pertama -->
+			
+			<div class="col-md-4"><!-- Awal kolom kedua -->
+			<div class="panel panel-default">
+				<div class="panel-body">
+				<h2 style="text-muted"><span class="glyphicon glyphicon-tasks"></span>BARANG PALING LARIS</h2>
+				<h4>MAHKOTA MOTIF</h4>
+				<img src="image/F.jpeg" class="img-thumbnail img-responsive">
+				<p> mahkota ini sering dipakai untuk ke party,ke acara formal dan juga skrg anak anak sering membuatnya untuk sekedar konten<br/><a class="btn btn-danger btn-xs" role="button">Info barang</a></p>
+				</div>
+      </div>
+			</div><!-- Akhir Kolom Kedua -->
+		</div><!-- Akhir Baris -->
+		</div><!--  Akhir Page -->
+		
+		<!-- FOOTER -->
+		<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4">
+			<h3><span class="glyphicon glyphicon-bullhorn"></span> Berita Terkini</h3>
+				<ul class="list-group">
+					<li class="list-group-item"><a href="#">tas gucci yg dipakai jenni bp 2023</a></li>
+					<li class="list-group-item"><a href="#">2021 LV merupakan produk paling laris di website luar negri</a></li>
+					<li class="list-group-item"><a href="#">apakah nagita slavina memakai barang original?</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+			<h3><span class="glyphicon glyphicon-info-sign"></span> info menarik</h3>
+				<ul class="list-group">
+					<li class="list-group-item"><a href="#">bagaimana cara mendapatkan diskon?</a></li>
+					<li class="list-group-item"><a href="#">apakah yg harus kita lakukan ketika mendapatkan barang palsu? </a></li>
+					<li class="list-group-item"><a href="#">siapakah penemu barang barang branded?</a></li>
+				</ul>
+				
+			</div>
+			<div class="col-md-4">
+			<h3><span class="glyphicon glyphicon-link"></span>selengkapnya</h3>
+				<ul class="list-group">
+					<li class="list-group-item"><a href="#">TAS </a></li>
+					<li class="list-group-item"><a href="#">TAS SEKOLAH</a></li>
+					<li class="list-group-item"><a href="#">CINCIN DAN KALUNG</a></li>
+					<li class="list-group-item"><a href="#">MAHKOTA</a></li>
+				</ul>
+				
+			</div>
+		<div class="row">
+			<div class="col-md-12">
+				<center>Copyright &copy 2023 Website belanjan ShV </span> by ShV<br/>
+				<a href="#">Home </a> | <a href="#">About Us </a> | <a href="#">Contact Us </a> | <a href="#">Login </a><br/><br/>
+				</center>
+			</div>
+			</div>
+		</div><!-- Akhir FOOTER -->
+		
+	<script src="bootstrap/js/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="bootstrap/js/dataTables.bootstrap.min.js"></script>
+	<script src="bootstrap/js/jquery.dataTables.js"></script>
+	<script src="bootstrap/js/scripts.js"></script>
+	</body>
+</html>
